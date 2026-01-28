@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+    int n,m,lcm;
+    scanf("%d%d",&n,&m);
+    lcm=n>m ? n:m;
+    for (int lcm=1;lcm<=n*m;lcm++) {
+        if (lcm%n==0 && lcm%m==0) {
+            printf("%d",lcm);
+            break;
+        }
+    }
+    return 0;
+}
