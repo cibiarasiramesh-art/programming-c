@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    int type;
+    
+    int amt=0;
+    scanf("%d%d",&type);
+    switch(type){
+        case 1:
+            amt=800;
+            break;
+        case 2:
+            amt=1200;
+            break;
+        case 3:
+        amt=1800;
+        break;
+        
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("transport fee Rs %d",amt);
+    return 0;
+}
