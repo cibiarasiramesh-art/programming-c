@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int time;
+    int amt=0;
+    scanf("%d%d",&type,&time);
+    switch(type){
+        case 1:
+        if(time>=18){
+            amt=250+50;
+        }
+        else{
+            amt=250;
+        }
+        break;
+        case 2:
+        if(time>=18){
+            amt=250+50;
+        }
+        else{
+            amt=250;
+        }
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("ticker price Rs%d",amt);
+    return 0;
+}
