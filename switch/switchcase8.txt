@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+int main(){
+    int mark;
+    int att;
+    scanf("%d%d",&mark,&att);
+    if(att<75){
+        printf("fail");
+    }
+    else if(mark>=75 && att>75){
+        printf("distination");
+    }
+    else if((mark>=50 && mark<=74) && (att>75)){
+        printf("pass");
+    }
+    else if(mark<50){
+        printf("fail");
+    }
+    return 0;
+}
