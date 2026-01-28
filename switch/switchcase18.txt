@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main(){
+    int an;
+    int mark;
+    scanf("%d%d",&an,&mark);
+    switch(an){
+        case 1:
+        if(mark>=80){
+            printf("excellent");
+            break;
+        }
+        else{
+            printf("not qualified");
+            break;
+        }
+        
+        case 2:
+        if(mark>=60){
+
+            printf("good");
+            break;
+        }
+        else{
+            printf("not qualified");
+            break;
+        }
+        case 3:
+        if(mark<60){
+            printf("needs improvement");
+            break;
+        }
+        default:
+        printf("invalid");
+        break;
+        
+    }
+    return 0;
+    
+}
