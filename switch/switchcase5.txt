@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    int planType;
+    char paymentMode[10];
+    int planCost = 0;
+    int cashback = 0;
+    scanf("%d", &planType);
+    scanf("%s", paymentMode);
+    switch (planType) {
+        case 1:
+            planCost = 199;
+            break;
+        case 2:
+            planCost = 399;
+            break;
+        default:
+            printf("Invalid Plan");
+            return 0;
+    }
+
+    
+    if (strcmp(paymentMode, "UPI") == 0 || strcmp(paymentMode, "Card") == 0) {
+        cashback = 20;
+    } 
+    else if (strcmp(paymentMode, "Wallet") == 0) {
+        cashback = 0;
+    } 
+    else {
+        printf("Invalid");
+        return 0;
+    }
+    printf("Pay: %d", planCost - cashback);
+
+    return 0;
+}
