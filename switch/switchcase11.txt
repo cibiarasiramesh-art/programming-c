@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    int type;
+    float data;
+    scanf("%d %f",&type,&data);
+    switch(type){
+        case 1:
+        if(data<=1.0){
+            printf("normal speed");
+        }
+        else{
+            printf("speed reduced");
+        }
+        break;
+        case 2:
+        if(data<=2.0){
+            printf("normal speed");
+        }
+        else{
+            printf("extra charges applied");
+        }
+        break;
+        default:
+        printf("extra charges applied");
+        break;
+        
+    }
+    return 0;
+}
