@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+int main(){
+    int v,h;
+    scanf("%d%d",&v,&h);
+    int total=0;
+    switch(v){
+        case 1:
+        total=h*10;
+        break;
+        case 2:
+        total=h*20;
+        break;
+        default:
+        total=h*20;
+        break;
+    }
+    printf("parking fee %d",total);
+    return 0;
+}
+
