@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int min;
+    int amt=0;
+    scanf("%d%d",&type,&min);
+    switch(type){
+        case 1:
+        amt=1*min;
+        break;
+        case 2:
+        amt=3*min;
+        break;
+        case 3:
+        amt=10*min;
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("call charges RS%d",amt);
+    return 0;
+}
