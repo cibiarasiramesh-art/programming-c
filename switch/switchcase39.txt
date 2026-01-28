@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    int type;
+    
+ 
+    scanf("%d",&type);
+    switch(type){
+        case 1:
+            printf("Delivery charge Rs 40");
+            break;
+        case 2:
+            printf("Delivery charge Rs 120");
+            break;
+        case 3:
+        printf("Delivery charge free");
+        break;
+        
+        default:
+        printf("invalid");
+        break;
+    }
+  
+    return 0;
+}
