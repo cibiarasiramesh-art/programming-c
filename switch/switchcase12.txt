@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int veh;
+    int trip;
+    int total=0;
+    scanf("%d%d",&veh,&trip);
+    switch(veh){
+        case 1:
+        if(trip==1){
+            total=100;
+        }
+        else{
+            total=800;
+        }
+        break;
+        case 2:
+            total=trip*240;
+            break;
+        default:
+            printf("invalid");
+            break;
+    }
+    printf("RS%d",total);
+    return 0;
+}
