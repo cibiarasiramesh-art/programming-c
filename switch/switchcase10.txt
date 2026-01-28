@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int r,e;
+    scanf("%d %d",&r,&e);
+    int sal=0;
+    int bon=0;
+    int total=0;
+    switch(r){
+        case 1:
+            sal=50000;
+            break;
+        case 2:
+            sal=35000;
+            break;
+        default:
+            printf("invalid");
+            break;
+        
+        }
+    if(e>=3){
+        bon=5000;
+        total=(e*bon)+sal;
+    }
+    printf("Salaray %d",total);
+    
+return 0;
+}
+
