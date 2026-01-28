@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int units;
+    int amt=0;
+    scanf("%d%d",&type,&units);
+    switch(type){
+        case 1:
+        if(units<=30){
+            amt=units*5;
+        }
+        else{
+            amt=(30*5)+(units-30)*8;
+        }
+        break;
+        case 2:
+        amt=units*10;
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("Bill Rs%d",amt);
+    return 0;
+}
