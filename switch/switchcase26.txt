@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main(){
+    int days;
+   int amt=0;
+    
+    scanf("%d",&days);
+    switch(days){
+        case 1:
+        amt=50*days;
+        break;
+        case 2:
+        amt=50*days;
+        break;
+        case 3:
+        amt=50*days;
+        break;
+        case 4:
+        amt=50*days;
+        break;
+        case 5:
+        amt=50*days;
+        break;
+        case 6:
+        amt=100*days;
+        break;
+        case 7:
+        amt=100*days;
+        break;
+        case 8:
+        amt=100*days;
+        break;
+        case 9:
+        amt=100*days;
+        break;
+        case 10:
+        amt=100*days;
+        break;
+        case 11:
+        amt=200*days;
+        break;
+        case 12:
+        amt=200*days;
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("call charges Rs%d",amt);
+    return 0;
+}
