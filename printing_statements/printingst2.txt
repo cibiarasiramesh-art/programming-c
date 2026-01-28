@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(){
+ 
+    printf("cibi");
+    return 0;
+}
