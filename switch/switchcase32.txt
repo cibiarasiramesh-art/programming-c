@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int day;
+    int amt=0;
+    scanf("%d%d",&type,&day);
+    switch(type){
+        case 1:
+            amt=2*day;
+            break;
+        case 2:
+            amt=5*day;
+            break;
+        
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("late fee Rs %d",amt);
+    return 0;
+}
