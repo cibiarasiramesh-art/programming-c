@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    int rev=0;
+    int or=n;
+    for (int i=n;n!=0;n=n/10) {
+        rev=(rev*10)+n%10;
+    }
+    if (rev==or) {
+        printf("Pallindrome");
+    }
+    else {
+        printf("not pallindrome");
+    }
+    return 0;
+
+
+}
