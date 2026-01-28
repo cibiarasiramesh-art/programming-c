@@ -1,0 +1,42 @@
+
+#include<stdio.h>
+int main(){
+    int mode;
+    char cat;
+    scanf("%d",&mode);
+    scanf(" %c",&cat);
+    switch(mode){
+        case 1:
+        switch(cat){
+            case 'R':
+                printf("5000");
+                break;
+            case 'S':
+                printf("3000");
+                break;
+            default:
+                printf("invalid");
+                break;
+            
+        }
+        break;
+        case 2:
+                switch(cat){
+                    case 'R':
+                        printf("9000");
+                        break;
+                    case 'S':
+                        printf("7000");
+                        break;
+                    default:
+                        printf("invalid");
+                        break;
+                }
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    return 0;
+}
+
