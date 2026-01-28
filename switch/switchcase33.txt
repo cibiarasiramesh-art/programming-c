@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int day;
+    int amt=0;
+    scanf("%d%d",&type,&day);
+    switch(type){
+        case 1:
+            amt=40;
+            break;
+        case 2:
+            amt=100;
+            break;
+        case 3:
+           amt=300;
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("Speed Mbps %d",amt);
+    return 0;
+}
