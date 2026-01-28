@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int billamt;
+    int amt=0;
+    scanf("%d%d",&type,&billamt);
+    switch(type){
+        case 1:
+        amt=billamt-(billamt*5/100);
+        break;
+        case 2:
+        amt=billamt-(billamt*15/100);
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("Rs%d",amt);
+    return 0;
+}
