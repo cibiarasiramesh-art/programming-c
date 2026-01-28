@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int dis;
+    int amt=0;
+    scanf("%d%d",&type,&dis);
+    switch(type){
+        case 1:
+        amt=dis*10;
+        break;
+        case 2:
+        amt=dis*15;
+        break;
+        case 3:
+        amt=dis*20;
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("Rs %d",amt);
+    return 0;
+}
