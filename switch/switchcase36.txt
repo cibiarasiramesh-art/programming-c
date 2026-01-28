@@ -1,0 +1,22 @@
+
+#include<stdio.h>
+int main(){
+    int type;
+    
+    int amt=0;
+    scanf("%d%d",&type);
+    switch(type){
+        case 1:
+            amt=500;
+            break;
+        case 2:
+            amt=1200;
+            break;
+        
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("certificate fee Rs %d",amt);
+    return 0;
+}
