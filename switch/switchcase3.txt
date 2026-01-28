@@ -1,0 +1,28 @@
+
+#include<stdio.h>
+int main() {
+    int a,b,amt;
+    scanf("%d %d %d",&a,&b,&amt);
+    switch (a) {
+        case 1:
+            if (b>=amt) {
+                printf("Transaction successful");
+                break;
+            }
+            else {
+                printf("limit exceed");
+                break;
+            }
+        case 2:
+            if (amt>5000) {
+                printf("Limit exceed");
+                break;
+            }
+            else {
+                printf("transaction successful");
+                break;
+            }
+    }
+    return 0;
+}
+
