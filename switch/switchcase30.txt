@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int amt=0;
+    scanf("%d",&type);
+    switch(type){
+        case 1:
+        amt=1500;
+        break;
+            case 2:
+            amt=4000;
+        break;
+        case 3:
+        amt=7000;
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("Membership fee Rs %d",amt);
+    return 0;
+}
