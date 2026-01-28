@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int type;
+    int lit;
+    int amt=0;
+    scanf("%d%d",&type,&lit);
+    switch(type){
+        case 1:
+            amt=105*lit;
+            break;
+        case 2:
+            amt=92*lit;
+            break;
+        case 3:
+           amt=85*lit;
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    printf("fuel cost Rs %d",amt);
+    return 0;
+}
