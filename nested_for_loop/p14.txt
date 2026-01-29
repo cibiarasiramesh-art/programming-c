@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    for (int row=1;row<=n;row++) {
+        for (int col=1;col<=row;col++) {
+            printf("%d",col);
+        }
+        for (int sp=1;sp<=2*(n-row);sp++) {
+            printf(" ");
+        }
+        for (int col=row;col>=1;col--) {
+            printf("%d",col);
+        }
+        printf("\n");
+    }
+}
