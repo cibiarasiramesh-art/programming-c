@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    for (int row=1;row<=n;row++) {
+
+        for (int s=1;s<=n-row;s++) {
+            printf(" ");
+        }
+        int ch=65;
+        int k=1;
+        for (int col=1;col<=2*row-1;col++) {
+            if (k<=row) {
+                printf("%c",ch);
+            }
+            else {
+                --ch;
+                printf("%c",--ch);
+            }
+            k++;
+            ch++;
+        }
+        printf("\n");
+    }
+}
