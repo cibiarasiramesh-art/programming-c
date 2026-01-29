@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    char last;
+
+   
+    last = 'A' + n - 1;   
+
+    for (int i = 0; i < n; i++) {
+        for (char ch = last - i; ch <= last; ch++) {
+            printf("%c ", ch);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
