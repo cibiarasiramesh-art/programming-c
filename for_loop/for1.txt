@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    int add=0;
+    int count=0;
+    for (int i=1;i<=n;i++) {
+        int ex;
+        scanf("%d",&ex);
+        add=add+ex;
+        if (ex>1000) {
+            count++;
+        }
+
+    }
+    printf("Total expense: %d\n",add);
+    printf("overspend days: %d",count);
+    return 0;
+}
