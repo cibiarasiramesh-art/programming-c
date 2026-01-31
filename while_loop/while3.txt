@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int totalGB;
+    int days;
+    int usedPerDay;
+    int dayCount = 0;
+    scanf("%d", &totalGB);
+    scanf("%d", &days);
+
+    while (days > 0 && totalGB > 0) {
+        scanf("%d", &usedPerDay);
+
+        if (usedPerDay <= totalGB) {
+            totalGB = totalGB - usedPerDay;
+            dayCount++;
+        } else {
+            break;
+        }
+
+        days--;
+    }
+    printf("%d\n", dayCount);
+    printf("%d\n", totalGB);
+
+    return 0;
+}
