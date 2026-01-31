@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    int hr;
+    scanf("%d",&hr);
+    for (int i=1;i<=hr;i++) {
+        int ch;
+        scanf("%d",&ch);
+        n=n-ch;
+    }
+    printf("remaining charge: %d ",n);
+    printf("%");
+}
