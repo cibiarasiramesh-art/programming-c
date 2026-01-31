@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+int main() {
+    int amt;
+
+
+    scanf("%d",&amt);
+    int absent;
+    scanf("%d",&absent);
+    for (int i=1;i<=absent;i++) {
+        amt=amt-100;
+
+    }
+    printf("Total salary: %d",amt);
+    return 0;
+}
