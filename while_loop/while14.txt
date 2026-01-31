@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int ATMcash;
+    int n;
+
+    scanf("%d", &ATMcash);
+    scanf("%d", &n);
+
+    int i = 0;
+    int withdraw;
+    int success = 0;
+    int remaining = ATMcash;
+
+    while (i < n) {
+        scanf("%d", &withdraw);
+
+        if (remaining >= withdraw) {
+            remaining = remaining - withdraw;
+            success++;
+        } else {
+            break;
+        }
+
+        i++;
+    }
+
+    printf("Successful Withdrawals: %d\n", success);
+    printf("Remaining Cash: %d", remaining);
+
+    return 0;
+}
+
