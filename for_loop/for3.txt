@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+    int days;
+    int add=0;
+    scanf("%d",&days);
+    for (int i=1;i<=days;i++) {
+        int unit;
+        scanf("%d",&unit);
+        add=add+unit;
+
+    }
+    printf("Total units:%d",add);
+    return 0;
+}
