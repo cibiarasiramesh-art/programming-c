@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int i = 0;
+    int x;
+    int current = 0;
+    int max = 0;
+
+    while (i < n) {
+        scanf("%d", &x);
+
+        if (x == 0) {
+            current = current + 1;
+
+            if (current > max) {
+                max = current;
+            }
+        } else {
+            current = 0;
+        }
+
+        i++;
+    }
+
+    printf("%d", max);
+
+    return 0;
+}
