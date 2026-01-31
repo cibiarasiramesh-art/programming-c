@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+int main() {
+    int n;
+    int add=0;
+    scanf("%d",&n);
+    for (int i=1;i<=n;i++) {
+        int amt;
+        scanf("%d",&amt);
+        add=add+amt;
+
+    }
+    if (add>10000) {
+        printf("Limit reached");
+    }
+    else {
+        printf("approved");
+    }
+    return 0;
+}
