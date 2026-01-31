@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int power;
+    int max;
+    int surge = 0;
+    int i = 0;
+
+    /* Read first power value */
+    scanf("%d", &power);
+    max = power;
+
+    if (power > 5) {
+        surge++;
+    }
+
+    i = 1;
+
+    /* Read remaining values */
+    while (i < n) {
+        scanf("%d", &power);
+
+        if (power > max) {
+            max = power;
+        }
+
+        if (power > 5) {
+            surge++;
+        }
+
+        i++;
+    }
+
+    printf("Maximum Usage: %d\n", max);
+    printf("Surge Hours: %d", surge);
+
+    return 0;
+}
+
