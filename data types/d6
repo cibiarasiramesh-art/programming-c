@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(){
+    double  a=40.0;
+    printf("%d",sizeof(a));
+    return 0;
+}
