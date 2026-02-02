@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    char y;
+    scanf("%c",&y);
+    if((y>='a' && y<='z')||(y>='A' && y<='Z')){
+        printf("Alphabets");
+    }
+    else if(y>='0'&&y<='9'){
+        printf("digits");
+    }
+    else{
+        printf("special characters");
+    }
+    return 0;
+    
+}
