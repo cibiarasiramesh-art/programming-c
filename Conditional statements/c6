@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    char y;
+    scanf("%c",&y);
+    if(y=='a'||y=='e'||y=='i'||y=='o'||y=='u'||y=='A'||y=='E'||y=='I'||y=='O'||y=='U'){
+        printf("vowles");
+    }
+    else{
+        printf("consonants");
+    }
+    return 0;
+    
+}
