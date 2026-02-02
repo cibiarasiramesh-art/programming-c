@@ -1,0 +1,14 @@
+
+#include<stdio.h>
+int main(){
+    int  y;
+    scanf("%d",&y);
+    if(y%3==0 && y%7==0){
+        printf("multiple of both 3 and 7");
+    }
+    else{
+        printf("not multiple of both 3 and 7");
+    }
+    return 0;
+    
+}
