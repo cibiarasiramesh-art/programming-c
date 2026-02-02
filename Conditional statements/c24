@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int x,y;
+    scanf("%d %d",&x,&y);
+    int op;
+    
+    printf("add=1\n");
+    printf("sub=2\n");
+    printf("mul=3\n");
+    printf("div=4\n");
+    scanf("%d",&op);
+    switch(op){
+        case 1:
+        printf("sum: %d",x+y);
+        break;
+         case 2:
+        printf("div: %d",x-y);
+        break;
+         case 3:
+        printf("mul: %d",x*y);
+        break;
+         case 4:
+        printf("div: %d",x/y);
+        break;
+    }
+    
+    
+    return 0;
+    
+}
