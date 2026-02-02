@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int size;
+    scanf("%d", &size);
+
+    int arr[size];
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int leaders[size];
+    int count = 0;
+
+    int max = arr[size - 1];
+    leaders[count++] = max;   
+
+    for (int i = size - 2; i >= 0; i--) {
+        if (arr[i] > max) {
+            max = arr[i];
+            leaders[count++] = max;
+        }
+    }
+
+
+    for (int i = count - 1; i >= 0; i--) {
+        printf("%d ", leaders[i]);
+    }
+
+    return 0;
+}
