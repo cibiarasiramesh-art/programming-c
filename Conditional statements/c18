@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    int x;
+    scanf("%d",&x);
+    int bill=x*5;
+    printf("%d",bill);
+    return 0;
+    
+}
