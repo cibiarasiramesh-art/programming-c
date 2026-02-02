@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    int x,y;
+    scanf("%d %d",&x,&y);
+    int small=(x<y)? x:y;
+    printf("Smallest value %d",small);
+    return 0;
+    
+}
