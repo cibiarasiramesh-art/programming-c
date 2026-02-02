@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int  y,x,z;
+    scanf("%d %d %d",&y,&x,&z);
+    if(y>x && y>z){
+        printf("%d is largest",y);
+    }
+    else if(x>y && x>z){
+        printf("%d is largest",x);
+    }
+    else if(z>x && z>y){
+        printf("%d is largest",z);
+    }
+    return 0;
+    
+}
