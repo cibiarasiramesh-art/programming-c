@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    int arr[r][c];
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+     }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            for (int k = i; k < r; k++) {
+                for (int l = (k == i ? j + 1 : 0); l < c; l++) {
+                    if (arr[i][j] == arr[k][l]) {
+                        printf("%d\n", arr[i][j]);
+                        return 0;
+                    }
+                }
+            }
+        }
+    }
+
+    printf("no dup\n");
+    return 0;
+}
