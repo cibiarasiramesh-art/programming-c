@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<limits.h>
+int main() {
+    int r,c;
+    scanf("%d %d",&r,&c);
+    int arr[r][c];
+    for (int i=0;i<r;i++) {
+        for (int j=0;j<c;j++) {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+    int count=0;
+    int maxrow=0;
+    int maxcol=INT_MIN;
+    for (int i=0;i<r;i++) {
+        for (int j=0;j<c;j++) {
+            for (int k=j+1;k<c;k++) {
+                if (arr[i][j]>arr[i][k]) {
+                    maxrow=arr[i][j];
+                }
+                else if (arr[i][j]<arr[i][k]) {
+                    maxrow=arr[i][k];
+                }
+            }
+        }
+        if (maxrow==maxcol) {
+            count++;
+        }
+
+        else if (maxrow>maxcol) {
+            maxcol=maxrow;
+            count=1;
+        }
+
+    }
+    printf("%d",count);
+}
