@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main() {
+    int r,c;
+    scanf("%d %d",&r,&c);
+    int arr[r][c];
+
+    for (int i=0;i<r;i++) {
+        for (int j=0;j<c;j++) {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int count=0;
+    for (int i=0;i<r;i++) {
+        int pallan=0;
+        for (int j=0;j<c/2;j++) {
+            for (int k=c-1;k>c/2;k--) {
+                if (arr[i][j]!=arr[i][k]) {
+                    pallan=0;
+                }
+                else if(arr[i][j]==arr[i][k]){
+                    pallan=1;
+                }
+            }
+        }
+        if (pallan==1) {
+            count++;
+        }
+        else if (pallan==0) {
+            count;
+
+
+        }
+
+    }
+    printf("count: %d",count);
+}
