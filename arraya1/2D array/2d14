@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<limits.h>
+int main() {
+    int r,c;
+    scanf("%d %d",&r,&c);
+    int arr[r][c];
+    for (int i=0;i<r;i++) {
+        for (int j=0;j<c;j++) {
+            printf("values;");
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int max=INT_MIN;
+    int col;
+    for (int i=0;i<r;i++) {
+        int add=0;
+        for (int j=0;j<c;j++) {
+            for (int k=i+1;k<r;k++) {
+                add=add+arr[i][k];
+            }
+            if (add>max) {
+                max=add;
+                col=j;
+            }
+        }
+
+    }
+    printf("%d",col);
+}
