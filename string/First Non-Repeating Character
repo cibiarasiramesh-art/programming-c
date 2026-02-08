@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char ch[200];
+    scanf("%s",ch);
+    char val;
+    for (int i=0;ch[i]!='\0';i++) {
+        char aski[256]={0};
+        for (int j=i;ch[j]!='\0';j++) {
+            if (aski[ch[j]]==1) {
+                break;
+            }
+            aski[ch[j]]=1;
+
+
+        }
+        val=ch[i];
+
+    }
+    printf("%c",val);
+
+
+}
