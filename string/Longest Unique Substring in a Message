@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<String.h>
+#include<limits.h>
+int main() {
+    char str[200];
+    scanf("%s",str);
+
+    int max=0;
+    for (int i=0;str[i]!='\0';i++) {
+        int aski[256]={0};
+        int count=0;
+        for (int j=i;str[j]!='\0';j++){
+            if (aski[str[j]]== 1) {
+                break;
+            }
+            aski[str[j]]=1;
+            count++;
+
+        }
+        if (count>max) {
+            max=count;
+        }
+    }
+    printf("%d",max);
+
+}
