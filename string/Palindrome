@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char ch[200];
+    scanf("%s",ch);
+    int len=strlen(ch);
+    printf("%d",len);
+    int not=0;
+    for (int i=0;i<len/2;i++) {
+        if (ch[i]!=ch[len-i-1]) {
+                not=1;
+                break;
+            }
+        }
+        if(not==1) {
+        printf("not Pallindrome");
+        }
+        else {
+        printf("Pallindrome");
+        }
+    }
+
