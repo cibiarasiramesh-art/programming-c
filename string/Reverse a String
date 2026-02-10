@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char ch[200];
+    scanf("%s",ch);
+    int len=strlen(ch);
+    for (int i=len;ch[i]>=0;i--) {
+        printf("%c",ch[i]);
+    }
+
+}
