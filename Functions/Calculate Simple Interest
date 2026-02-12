@@ -1,0 +1,13 @@
+#include<Stdio.h>
+float intrest(int p,int r,int t) {
+    float val=((p*r*t)/100);
+    return val;
+}
+int main() {
+
+    int p,r,t;
+    scanf("%d %d %d",&p,&r,&t);
+    float res=intrest(p,r,t);
+    printf("%.2f",res);
+    return 0;
+}
