@@ -1,0 +1,18 @@
+#include<stdio.h>
+int largest(int n,int m) {
+    if (n>m) {
+        printf("%d",n);
+    }
+    else if (m>n) {
+        printf("%d",m);
+    }
+    else if (n==m) {
+        printf("%d",n) ;
+    }
+}
+int main() {
+    int n,m;
+    scanf("%d %d",&n,&m);
+    int res=largest(n,m);
+    return 0;
+}
