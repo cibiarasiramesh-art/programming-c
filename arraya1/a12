@@ -15,8 +15,6 @@ int main() {
     scanf("%d", &sum);
 
     int max = INT_MIN;
-
-    // Find largest element less than sum
     for (int i = 0; i < n; i++) {
         if (arr[i] > max && arr[i] < sum) {
             max = arr[i];
