@@ -1,0 +1,15 @@
+#include<stdio.h>
+int check(int n) {
+    if (n%2==0) {
+        printf("even");
+    }
+    else {
+        printf("odd");
+    }
+}
+int main() {
+    int n;
+    scanf("%d",&n);
+    int res=check(n);
+    return 0;
+}
