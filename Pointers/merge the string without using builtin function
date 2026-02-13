@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+    char ch1[100];
+    char ch2[100];
+    scanf("%s",&ch1);
+    scanf("%s",&ch2);
+    char *p=&ch1;
+    char *q=&ch2;
+    while (*p!='\0') {
+        p++;
+    }
+    while (*q!='\0') {
+        *p=*q;
+        p++;
+        q++;
+    }
+    *p='\0';
+    printf("%s",ch1);
+}
