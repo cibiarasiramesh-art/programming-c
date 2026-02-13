@@ -1,0 +1,33 @@
+#include<stdio.h>
+void select(int n,int m,char ope) {
+
+    switch (ope) {
+        case '+':
+            printf("%d",n+m);
+            break;
+
+        case '-':
+            printf("%d",n-m);
+            break;
+        case '*':
+            printf("%d",n*m);
+        case '/':
+            if (m!=0) {
+                printf("%d",n/m);
+            }
+            else {
+                printf("invalid divisor");
+            }
+
+        default:
+            printf("invalid");
+    }
+}
+int main() {
+    int n,m;
+    scanf("%d %d",&n,&m);
+    char ope;
+    scanf(" %c",&ope);
+    select(n,m,ope);
+
+}
