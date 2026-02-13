@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char ch[300];
+    fgets(ch,sizeof(ch),stdin);
+    char *p=ch;
+    int i=0;
+    int count=1;
+    while (*(p+i)!='\0') {
+        if (*(p+i)== ' ') {
+            count=count+1;
+
+        }
+        i++;
+    }
+    printf("%d",count);
+
+}
